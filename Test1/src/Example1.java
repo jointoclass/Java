@@ -27,6 +27,6 @@ public class Example1 {
         //boolean 타입 예제
         // true는 참을 의미하지만 한글은 안 먹힘
         boolean bool = true; // true와 1은 참의 뜻, false과 0은 거짓의 뜻
-        System.out.println(bool);+
+        System.out.println(bool);
     }
 }
