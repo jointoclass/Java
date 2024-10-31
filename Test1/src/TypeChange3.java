@@ -26,7 +26,7 @@ public class TypeChange3 {
         short data4 = 5;
         int value9 = data3 + data4; // 3+ 5 = 8
         double value10 = data3 + data4; //3.0 + 5.0 + 8.0
-        
+
 
         System.out.println(value6);
         System.out.println(value7);
