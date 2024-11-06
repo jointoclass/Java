@@ -1,6 +1,6 @@
 public class Example4 {
     public static void main(String[] args) {
-        //배열속에서 찾고자 하는 데이터를 찾아 해당 엔덱스를
+        // 배열속에서 찾고자 하는 데이터를 찾아 해당 엔덱스를
         // 리턴하는 메서드
         String[] colors = {"black", "white", "red", "green", "blue"};
         System.out.println(findColor(colors, "white")); // 1
