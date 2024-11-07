@@ -12,10 +12,18 @@ class Bird extends Animal {
     }
 }
 class Cat extends Animal {
-    @Override
+    @Override // 어노테이션
     void cry() {
-            System.out.println("야옹");
+        super.cry(); // ...
+            // System.out.println("야옹");
     }
+    // 어노테이션은 코드에 추가적인 정보를 제공하기 위한 메타데이터
+    // 메타데이터는 주로 코드의 의미를 명확하게 하고 컴파일러에게 지시를 내리거나
+    // 특정 동작을 수행할 수 있도록 명령하는 코드
+    // @Override 어노테이션의 장점
+    // #1. 컴파일러가 오버라이딩 여부를 검증
+    // #2. 개발자의 가독성을 항상
+    // #3. 메서드 수정 시 실수를 방지해줌
 }
 class Dog extends Animal {
     void cry() {
