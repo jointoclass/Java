@@ -1,47 +1,45 @@
-import jdk.jshell.spi.ExecutionControl;
+import java.time.LocalDate;
 
 public class Employee {
-    private String employeeNumber;
-    private String name;
-    private String englishName;
+    private String employeeId;
+    private String name; // 사원명
+    private String englishName; // 영문이름
     private String position;
     private String gender;
-    private String birthDay;
-    private String entryDate;
+    private LocalDate birthDate;
+    private LocalDate hireDate;
     private String address;
     private String city;
-    private String area;
-    private String homeTelephone;
-    private String superiorNumber;
-    private String departmentNumber;
+    private String region;
+    private String homePhone;
+    private String supervisorId;
+    private String departmentId;
 
     public Employee() {
     }
 
-    public Employee(String employeeNumber, String name, String englishName,
-                    String position, String gender, String birthDay, String entryDate,
-                    String address, String city, String area, String homeTelephone,
-                    String superiorNumber, String departmentNumber) {
-        this.employeeNumber = employeeNumber;
+    public Employee(String employeeId, String name, String englishName, String position, String gender, LocalDate birthDate, LocalDate hireDate, String address, String city, String region, String homePhone, String supervisorId, String departmentId) {
+        this.employeeId = employeeId;
         this.name = name;
         this.englishName = englishName;
         this.position = position;
         this.gender = gender;
-        this.birthDay = birthDay;
-        this.entryDate = entryDate;
+        this.birthDate = birthDate;
+        this.hireDate = hireDate;
         this.address = address;
         this.city = city;
-        this.area = area;
-        this.homeTelephone = homeTelephone;
-        this.superiorNumber = superiorNumber;
-        this.departmentNumber = departmentNumber;
+        this.region = region;
+        this.homePhone = homePhone;
+        this.supervisorId = supervisorId;
+        this.departmentId = departmentId;
     }
 
-    public String getEmployeeNumber() {
-        return employeeNumber;
+    public String getEmployeeId() {
+        return employeeId;
     }
-    public void setEmployeeNumber(String employeeNumber) {
-        this.employeeNumber = employeeNumber;
+
+    public void setEmployeeId(String employeeId) {
+        this.employeeId = employeeId;
     }
 
     public String getName() {
@@ -76,20 +74,20 @@ public class Employee {
         this.gender = gender;
     }
 
-    public String getBirthDay() {
-        return gender;
+    public LocalDate getBirthDate() {
+        return birthDate;
     }
 
-    public void setBirthDay(String gender) {
-        this.gender = gender;
+    public void setBirthDate(LocalDate birthDate) {
+        this.birthDate = birthDate;
     }
 
-    public String getEntryDate() {
-        return entryDate;
+    public LocalDate getHireDate() {
+        return hireDate;
     }
 
-    public void setEntryDate(String entryDate) {
-        this.entryDate = entryDate;
+    public void setHireDate(LocalDate hireDate) {
+        this.hireDate = hireDate;
     }
 
     public String getAddress() {
@@ -108,7 +106,40 @@ public class Employee {
         this.city = city;
     }
 
-    public String getArea() {
-        return
+    public String getRegion() {
+        return region;
+    }
+
+    public void setRegion(String region) {
+        this.region = region;
+    }
+
+    public String getHomePhone() {
+        return homePhone;
+    }
+
+    public void setHomePhone(String homePhone) {
+        this.homePhone = homePhone;
+    }
+
+    public String getSupervisorId() {
+        return supervisorId;
+    }
+
+    public void setSupervisorId(String supervisorId) {
+        this.supervisorId = supervisorId;
+    }
+
+    public String getDepartmentId() {
+        return departmentId;
+    }
+
+    public void setDepartmentId(String departmentId) {
+        this.departmentId = departmentId;
+    }
+
+    @Override
+    public String toString() {
+        return employeeId + ", " + name + ", " + englishName + ", " + position + ", " + gender + ", " + birthDate + ", " + hireDate + ", " + address + ", " + city + ", " + region + ", " + homePhone + ", " + supervisorId + ", " + departmentId;
     }
 }
